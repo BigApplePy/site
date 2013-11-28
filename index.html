@@ -3,6 +3,7 @@
 <head>
   <title>Big Apple Py</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -13,6 +14,20 @@
       background: url(logo.png) no-repeat center center;
       height: 402px;
       text-indent: -9999px;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        background-image: url(logo-mid.png);
+        height: 313px;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      h1 {
+        background-image: url(logo-small.png);
+        height: 179px;
+      }
     }
 
     a {
