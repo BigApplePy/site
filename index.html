@@ -5,11 +5,55 @@
   <meta charset="utf-8">
   <style>
     html, body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-align: center;
+    }
+
+    h1 {
+      background: url(logo.png) no-repeat center center;
+      height: 402px;
+      text-indent: -9999px;
+    }
+
+    a {
+      color: #000;
+      font-weight: bold;
+    }
+
+    dd {
+      margin: 0;
+    }
+
+    footer {
+      font-size: 80%;
+    }
+
+    .meetups {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  Welcome to BigApplePy!
+  <header>
+    <h1>Big Apple Py</h1>
+  </header>
+
+  <section class="meetups">
+    <a href="http://www.nycpython.com">NYC Python</a> &middot;
+    <a href="http://flask-nyc.org">Flask-NYC</a>
+  </section>
+
+  <section class="contacts">
+    <dl>
+      <dt>James Powell
+      <dd><a href="mailto:james@nycpython.com">james@nycpython.com</a>
+      <dt>Andy Dirnberger
+      <dd><a href="mailto:andy@nycpython.com">andy@nycpython.com</a>
+    </dl>
+  </section>
+
+  <footer>
+    <p>&copy; 2013 Big Apple Py, Inc.</p>
+  </footer>
 </body>
 </html>
