@@ -1,5 +1,18 @@
 ---
 ---
+
+$tablet-width: 768px;
+$phone-width: 640px;
+
+@mixin device-width($medium) {
+  @if $medium == tablet {
+    @media only screen and (max-width: $tablet-width) { @content };
+  }
+  @else if $medium == phone {
+    @media only screen and (max-width: $phone-width) { @content };
+  }
+}
+
 html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -9,17 +22,13 @@ h1 {
   background: url(logo.png) no-repeat center center;
   height: 402px;
   text-indent: -9999px;
-}
 
-@media screen and (max-width: 768px) {
-  h1 {
+  @include device-width(tablet) {
     background-image: url(logo-mid.png);
     height: 313px;
   }
-}
 
-@media screen and (max-width: 640px) {
-  h1 {
+  @include device-width(phone) {
     background-image: url(logo-small.png);
     height: 179px;
   }
