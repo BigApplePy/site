@@ -1,0 +1,43 @@
+---
+---
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  background: url(logo.png) no-repeat center center;
+  height: 402px;
+  text-indent: -9999px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    background-image: url(logo-mid.png);
+    height: 313px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    background-image: url(logo-small.png);
+    height: 179px;
+  }
+}
+
+a {
+  color: #000;
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+footer {
+  font-size: 80%;
+}
+
+.meetups {
+  margin-bottom: 20px;
+}

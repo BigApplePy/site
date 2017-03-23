@@ -4,49 +4,7 @@
   <title>Big Apple Py</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html, body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-align: center;
-    }
-
-    h1 {
-      background: url(logo.png) no-repeat center center;
-      height: 402px;
-      text-indent: -9999px;
-    }
-
-    @media screen and (max-width: 768px) {
-      h1 {
-        background-image: url(logo-mid.png);
-        height: 313px;
-      }
-    }
-
-    @media screen and (max-width: 640px) {
-      h1 {
-        background-image: url(logo-small.png);
-        height: 179px;
-      }
-    }
-
-    a {
-      color: #000;
-      font-weight: bold;
-    }
-
-    dd {
-      margin: 0;
-    }
-
-    footer {
-      font-size: 80%;
-    }
-
-    .meetups {
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
 </head>
 <body>
   <header>
@@ -81,7 +39,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2014-2016 Big Apple Py, Inc.</p>
+    <p>&copy; 2014-2017 Big Apple Py, Inc.</p>
   </footer>
 </body>
 </html>
