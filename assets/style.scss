@@ -20,16 +20,15 @@ html, body {
 
 h1 {
   background: url(logo.png) no-repeat center center;
+  background-size: contain;
   height: 402px;
   text-indent: -9999px;
 
   @include device-width(tablet) {
-    background-image: url(logo-mid.png);
     height: 313px;
   }
 
   @include device-width(phone) {
-    background-image: url(logo-small.png);
     height: 179px;
   }
 }
